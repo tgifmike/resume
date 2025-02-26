@@ -1,11 +1,10 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Noto_Serif, Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme/theme-provider";
 import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
 import { AppSidebar } from "@/components/sidebar/app-sidebar";
-import { cookies } from "next/headers";
-import { ModeToggle } from "@/components/theme/ModeToggle";
+
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -15,6 +14,12 @@ const geistSans = Geist({
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
+});
+
+const notoSerif = Noto_Serif({
+	variable: '--font-noto-serif',
+	weight: '400',
+	subsets: ['latin'],
 });
 
 export const metadata: Metadata = {
@@ -27,22 +32,18 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-
- 
-
   return (
-		<html lang="en">
+		<html lang="en" className={notoSerif.className} suppressHydrationWarning>
 			<body
-				className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        
+				className={`${geistSans.variable} ${geistMono.variable} ${notoSerif.variable} antialiased`}
+			>
 				<ThemeProvider
 					attribute="class"
 					defaultTheme="system"
 					enableSystem
 					disableTransitionOnChange
 				>
-					<SidebarProvider >
+					<SidebarProvider>
 						<AppSidebar />
 						<SidebarTrigger />
 						{children}
