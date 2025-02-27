@@ -51,7 +51,7 @@ const Projects = () => {
 						</TableHeader>
 						<TableBody>
 							<TableRow className="">
-								<TableCell className="font-bold text-accent">
+								<TableCell className="font-bold">
 									Fully Fuctioning Production Blog
 								</TableCell>
 								<TableCell>TypeScript, JavaScript, HTML, CSS</TableCell>
@@ -73,7 +73,7 @@ const Projects = () => {
 								</TableCell>
 							</TableRow>
 							<TableRow className="">
-								<TableCell className="font-bold text-accent">
+								<TableCell className="font-bold">
 									Triva Game (Inside The Manager Life Blog)
 								</TableCell>
 								<TableCell>TypeScript, JavaScript, HTML, CSS</TableCell>
@@ -94,8 +94,8 @@ const Projects = () => {
 								</TableCell>
 							</TableRow>
 							<TableRow className="">
-								<TableCell className="font-bold text-accent">
-									Lemonade Stand (Inside The Manager Life Blog)
+								<TableCell className="font-bold">
+									Lemonade Stand Game (Inside The Manager Life Blog)
 								</TableCell>
 								<TableCell>TypeScript, JavaScript, HTML, CSS</TableCell>
 								<TableCell>React, Tailwinds, Next.js</TableCell>
@@ -115,22 +115,21 @@ const Projects = () => {
 								</TableCell>
 							</TableRow>
 							<TableRow className="">
-								<TableCell className="font-bold text-accent">
-									I wanted to practice with API call so i have calls to stock API's, sports API's and weather API's.
+								<TableCell className="font-bold">
+									I wanted to practice with API call so i have calls to stock
+									API's, sports API's and weather API's. This is an ongoing project and not finished yet.
 								</TableCell>
 								<TableCell>TypeScript, JavaScript, HTML, CSS</TableCell>
 								<TableCell>React, Tailwinds, Next.js</TableCell>
-								<TableCell>
-									API calls to differnet services for data.
-								</TableCell>
+								<TableCell>API calls to differnet services for data.</TableCell>
 								<TableCell>Github, Vercel, shadcn/ui</TableCell>
 								<TableCell className="text-accent">
-									<Link href="https://www.themanagerlife.com">
-										The Manager Life
+									<Link href="https://dashboard-sable-ten-37.vercel.app/">
+										API App
 									</Link>
 								</TableCell>
 								<TableCell className="text-right text-accent">
-									<Link href="https://github.com/tgifmike/tml_mark4">
+									<Link href="https://github.com/tgifmike/dashboard">
 										<Github />
 									</Link>
 								</TableCell>
